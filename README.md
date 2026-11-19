@@ -4,6 +4,16 @@
 
 > 免责声明：仅供学习与个人使用；请勿分发造梦盒子本体或其资源。修改前务必备份，风险自负。
 
+## 下载原版造梦盒子（必需）
+
+本仓库只提供补丁与工具，**不含盒子本体**。请先从原作者处下载 v1.9（64 位）：
+
+- 发行版页面：<https://gitee.com/duskeye/zmBox/releases>
+- v1.9 直接下载：<https://gitee.com/duskeye/zmBox/releases/download/v1.9/zmBox_x64.zip>
+- 源码仓库（MIT，作者 duskeye）：<https://gitee.com/duskeye/zmBox>
+
+解压后应能看到 `造梦盒子.exe`、`AppEntry.swf`、`META-INF/`、`Adobe AIR/`，再按 [`patches/README.md`](patches/README.md) 打补丁。
+
 ## 功能
 
 | 功能 | 说明 |

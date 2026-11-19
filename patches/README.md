@@ -2,6 +2,11 @@
 
 适用：造梦盒子 v1.9（AIR 51.2，64 位）。请先备份 `AppEntry.swf` 和 `META-INF/`。
 
+> 原版下载（本仓库不含盒子本体）：
+> - 发行版：<https://gitee.com/duskeye/zmBox/releases>
+> - v1.9：<https://gitee.com/duskeye/zmBox/releases/download/v1.9/zmBox_x64.zip>
+> - 源码（MIT，作者 duskeye）：<https://gitee.com/duskeye/zmBox>
+
 ## 准备
 
 - [FFDec](https://github.com/jindrapetrik/jpexs-decompiler/releases)（`ffdec-cli.jar`）
