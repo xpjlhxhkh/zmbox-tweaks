@@ -14,6 +14,13 @@
 
 解压后应能看到 `造梦盒子.exe`、`AppEntry.swf`、`META-INF/`、`Adobe AIR/`，再按 [`patches/README.md`](patches/README.md) 打补丁。
 
+## 一键补丁包（推荐，不想折腾 FFDec / AIR SDK 的人用）
+
+- 下载地址：<https://github.com/xpjlhxhkh/zmbox-tweaks/releases/latest>（`zmBox-enhance-v1.9.zip`）
+- 用法：先解压原版 v1.9 → 再解压一键包 → 双击 `安装.bat` → 选择盒子文件夹。
+  会自动备份原文件、替换 `AppEntry.swf` 与 `META-INF`、带上金币和帧率标签；`卸载.bat` 可还原。
+- 一键包只含修改后的 `AppEntry.swf`、自签名 `META-INF` 和几个小工具，**不含**盒子本体、AIR 运行时和游戏素材。
+
 ## 功能
 
 | 功能 | 说明 |
