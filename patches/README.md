@@ -99,7 +99,31 @@ private var curSpeed:Number = 1;
 
 > 注意：高帧率与倍速互斥是原作者设定。实测 60fps 下强行 `stage.frameRate = 60*curSpeed` 会让倍数越高人物越慢，建议保留原有限制（高帧率开启时提示“60帧不支持倍速调整”）。
 
-### 2.4 帧率数据（可选，配合 tools/FpsLabel.cs）
+### 2.4 设置面板新增“切换全屏”（可选）
+
+`com/zmbox/view/SettingLayer.as` 的 `init()` 里，在“清空主文件缓存”之后、`saveBtn` 之前加入：
+
+```as3
+hBox = new HBox(vBox,0,0);
+hBox.spacing = 20;
+fullscreenBtn = new PushButton(hBox,0,0,"切换全屏");
+fullscreenBtn.addEventListener(MouseEvent.CLICK,function(param1:MouseEvent):void
+{
+   if(stage.displayState == "normal")
+   {
+      stage.displayState = "fullScreenInteractive";
+   }
+   else
+   {
+      stage.displayState = "normal";
+   }
+});
+new Label(hBox,0,0,"（Esc 退出全屏）");
+```
+
+同时给类加字段 `public var fullscreenBtn:PushButton;`。全屏后按 Esc 或再点一次按钮即可退出。
+
+### 2.5 帧率数据（可选，配合 tools/FpsLabel.cs）
 
 `AppEntry.as` 里加一个计时器，每 500ms 把实测 FPS 写入 `%TEMP%\zmBoxFps.txt`：
 
